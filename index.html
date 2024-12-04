@@ -9,23 +9,27 @@
 </head>
 
 <body>
-    <h1>Consulta de <br>Repositório <br> <strong>GitHub</strong></h1>
-    <div id="App">
-        <img src="./imagens/github.png" alt="Logo do GitHub">
-        
-        <div id="box-entrada">
-            <input type="text" name="user" id="user">
-            <button onclick="repos()">Adicionar</button>
-        </div>
-        <p id="carregando">Carregando...</p>
-        <div class="lista">
-            <h2>Lista de Repositórios</h2>
+    <section id="principal">
+        <h1>Consulta de <br>Repositório <br> <strong>GitHub</strong></h1>
+
+        <div id="App">
+            <img src="./imagens/github.png" alt="Logo do GitHub">
+            <div id="box-entrada">
+                <label for="user">Nome de usuário do GitHub</label>
+                <input type="text" name="user" id="user" placeholder="username">
+                <button onclick="repos()">Adicionar</button>
+            </div>
+            <p id="carregando">Carregando...</p>
+    </section>
+
+    </div>
+    <section id="retorno-git">
+        <div id="lista-repositorio">
+            <h2 id="titulo-lista">Lista de Repositórios</h2>
             <ul id="lista">
-                
-            
             </ul>
         </div>
-    </div>
+    </section>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>

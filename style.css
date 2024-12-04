@@ -11,9 +11,28 @@ body {
     min-height: 100vh;
     max-height: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+#principal{
+display: flex;
+justify-content:space-between;
+flex-direction: row;
+height: 100vh;
+}
+#retorno-git{
+    background-color: white;
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    height:100%;
     
     justify-content: center;
-
+    
+   
+    
 }
 h1{
     padding-left: 3px;
@@ -21,11 +40,14 @@ h1{
     font-size: 5em;
     text-align: left;
     align-items: center;
-    width: 30vw;
+    width: 50vw;
     max-width: auto ;
     min-height: 300px;
     max-height: auto;
     margin: auto;
+    padding-left: 1em;
+    line-height: 1.2em;
+    letter-spacing: 3px;
     
 }
 
@@ -43,6 +65,7 @@ h1{
     min-height: 300px;
     max-height: auto;
     margin: auto;
+    color: white;
 }
 #box-entrada{
     display: flex;
@@ -52,14 +75,40 @@ h1{
     margin: auto;
     
 }
-.lista{
-   background-color: white;
+input{
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 15px;
+    border: none;
+}
+button{
+    padding: 1em;
+    border-radius: 50px;
+    background-image: linear-gradient(to left, rgb(35, 2, 124) 10%, rgb(121, 2, 233)  , rgb(44, 3, 71) );
+    background-size: 500% 100%;
+    color: white;
+    border: none;
+    font-size: 1em;
+    box-shadow: 1px 1px 3px rgb(114, 73, 177);
+    transition: transform 0.3s;
+    animation-name: degrade-button;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+   
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#lista-repositorio{
+   background-color: rgb(255, 255, 255);
     padding: 2em;
     border-radius: 20px;
-    
     width:400px;
     
-    margin: auto;
+    
 }
 ul{
     list-style-type: none;
@@ -86,4 +135,13 @@ img{
 
 p {
     display: none;
+}
+
+@keyframes degrade-button {
+    0%{
+        background-position-x: 0% ;
+    }
+    100%{
+        background-position-x: 100%;
+    }
 }
