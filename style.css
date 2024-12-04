@@ -92,7 +92,7 @@ button{
     border: none;
     font-size: 1em;
     box-shadow: 1px 1px 3px rgb(114, 73, 177);
-    transition: transform 0.3s;
+    transition: transform 0.2s;
     animation-name: degrade-button;
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
@@ -126,14 +126,18 @@ h2{
 }
 a{
     text-decoration: none;
-    color: rgb(35, 2, 88);
+    color: #230258;
    
 }
 img{
     width: 300px;
     margin: auto;
 }
-
+span img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
 
 p {
     display: none;
@@ -147,3 +151,4 @@ p {
         background-position-x: 100%;
     }
 }
+

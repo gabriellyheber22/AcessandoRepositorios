@@ -20,10 +20,16 @@ function repos() {
                 item = document.createElement('li');//Criando o item
                 listaRepositirios.appendChild(item);//Adicionando o item a lista
                 let itemTextName = document.createTextNode(repositorio.name); //pegando o retorno do repositorio e criando um text node
+                let iconLink = document.createElement('span');
+                let imgIcon = document.createElement('img');
+                imgIcon.setAttribute('src', './imagens/icon_link.svg');
+                iconLink.appendChild(imgIcon)
+                
                 let itemLink = document.createElement('a'); //Criando tag de link para atribuir a URL do repositorio
                 itemLink.setAttribute('href', ''+repositorio.html_url+''); //Adicionando os atributos
                 itemLink.setAttribute('target', 'blank')//Abrir link em nova
                 itemLink.appendChild(itemTextName); //Encapsulando o nome do repositorio com a sua url
+                itemLink.appendChild(iconLink);
                 item.appendChild(itemLink); //Adicionando o link ao <li>
                 
             });
