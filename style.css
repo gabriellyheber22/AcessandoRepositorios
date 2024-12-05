@@ -152,3 +152,34 @@ p {
     }
 }
 
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 2em;
+        padding: 1em;
+    }
+    #App{
+        
+    padding:0;
+    gap: 0;
+    
+    max-height: auto;
+    margin: auto;
+    color: white;
+}
+    }
+    #box-entrada{
+        width: 80vw;
+        gap: 0.5em;
+        margin: auto;
+        
+    }
+    #principal{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
