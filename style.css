@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top, rgb(17, 3, 56) 10%, rgb(24, 1, 53) , rgb(0, 0, 0));
+    background-image: linear-gradient(to top, rgb(17, 3, 56) 10%, rgb(24, 1, 53), rgb(0, 0, 0));
     color: rgb(18, 1, 34);
     width: 100vw;
     min-height: 100vh;
@@ -18,75 +19,81 @@ body {
     overflow-x: hidden;
 
 }
-#principal{
-display: flex;
-justify-content:space-between;
-flex-direction: row;
-height: 100vh;
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100vh;
 }
-#retorno-git{
+
+#retorno-git {
     background-color: white;
     display: none;
     width: 100%;
     min-height: 100vh;
-    height:100%;
-    
+    height: 100%;
+
     justify-content: center;
-    
-   
-    
+
+
+
 }
-h1{
+
+h1 {
     padding-left: 3px;
     color: white;
     font-size: 5em;
     text-align: left;
     align-items: center;
     width: 50vw;
-    max-width: auto ;
+    max-width: auto;
     min-height: 300px;
     max-height: auto;
     margin: auto;
     padding-left: 1em;
     line-height: 1.2em;
     letter-spacing: 3px;
-    
+
 }
 
 
 #App {
-   
-    padding:2em;
+
+    padding: 2em;
     gap: 1em;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 60vw;
-    max-width: auto ;
+    max-width: auto;
     min-height: 300px;
     max-height: auto;
     margin: auto;
     color: white;
 }
-#box-entrada{
+
+#box-entrada {
     display: flex;
     flex-direction: column;
     width: 400px;
     gap: 0.5em;
     margin: auto;
-    
+
 }
-input{
+
+input {
     padding: 1em;
     font-size: 1em;
     border-radius: 15px;
     border: none;
 }
-button{
+
+button {
     padding: 1em;
     border-radius: 50px;
-    background-image: linear-gradient(to left, rgb(35, 2, 124) 10%, rgb(121, 2, 233)  , rgb(44, 3, 71) );
+    background-image: linear-gradient(to left, rgb(35, 2, 124) 10%, rgb(121, 2, 233), rgb(44, 3, 71));
     background-size: 500% 100%;
     color: white;
     border: none;
@@ -98,42 +105,51 @@ button{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: alternate;
-   
+
 }
-button:hover{
+
+button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-#lista-repositorio{
-   background-color: rgb(255, 255, 255);
+
+#lista-repositorio {
+    background-color: rgb(255, 255, 255);
     padding: 2em;
     border-radius: 20px;
-    width:400px;
-    
-    
+    width: 400px;
+
+
 }
-ul{
+
+ul {
     list-style-type: none;
-    
+
 }
-li{
-    padding: 0.3em 0 ;
+
+li {
+    padding: 0.3em 0;
     font-size: 1.2em;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-bottom: 1em;
 }
-a{
+
+a {
     text-decoration: none;
     color: #230258;
-   
+
 }
-img{
+
+img {
     width: 300px;
+
     margin: auto;
 }
-span img{
+
+span img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
@@ -144,42 +160,61 @@ p {
 }
 
 @keyframes degrade-button {
-    0%{
-        background-position-x: 0% ;
+    0% {
+        background-position-x: 0%;
     }
-    100%{
+
+    100% {
         background-position-x: 100%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    h1{
-        font-size: 2em;
-        padding: 1em;
+
+@media screen and (min-width:400px) and (max-width: 850px) {
+
+    #principal {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        justify-items: center;
+
+
     }
-    #App{
-        
-    padding:0;
-    gap: 0;
-    
-    max-height: auto;
-    margin: auto;
-    color: white;
-}
+    img{
+        width: 300px;
+        margin: 0;
     }
     #box-entrada{
-        width: 80vw;
-        gap: 0.5em;
-        margin: auto;
-        
+        margin: 0;
+
     }
-    #principal{
-        flex-direction: column;
-        height: 100vh;
-        width: 100vw;
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 1em;
+    }
+
+    #App {
+        width: 90vw;
+        margin-top: -5em;
+        margin-bottom: 2em;
+        padding: 0;
+        display: flex;
         justify-content: center;
         align-items: center;
+
     }
-    
+
 }
 
+@media screen and (min-width:860px) and (max-width: 1150px) {
+
+    h1 {
+        font-size: 3.5em;
+        padding-left: 1em;
+    }
+
+
+}
