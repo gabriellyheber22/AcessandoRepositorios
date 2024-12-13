@@ -199,8 +199,8 @@ p {
     #App {
         width: 90vw;
         margin-top: -5em;
-        margin-bottom: 2em;
-        padding: 0;
+        
+        padding-botton: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
